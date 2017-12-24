@@ -1,14 +1,14 @@
-title: Long Haul
-description: Long Form Jekyll theme built with SASS / COMPASS / SUSY
+title: Gustavo Silva
+description: Gustavo Silva's blog
 
-url: http://brianmaierjr.github.com/long-haul
+url: http://gustavorssilva.com
 baseurl: ""
 paginate_path: "blog/page:num/"
 permalink: blog/:title/
 
 markdown: kramdown
 highlighter: rouge
-gems: [jekyll-paginate]
+plugins: [jekyll-paginate]
 paginate: 5
 
 navigation:
@@ -20,9 +20,9 @@ navigation:
    url: /contact
 
 social:
-   github: brianmaierjr
-   twitter: brianmaierjr
-   facebook: brianmaierjr
-   email: brimaidesigns@gmail.com
+   github: gustavorssilva
+   twitter: gustavorssilva
+   facebook: gustavoriossousasilva
+   email: silva.g19@gmail.com
 
 google_analytics: "UA-58263416-1"
