@@ -1,6 +1,6 @@
-My personal site/blog.
+**My personal site/blog.**
 
-#### This site is based on brianmaierjr's https://github.com/brianmaierjr/long-haul 
+This site is based on brianmaierjr's https://github.com/brianmaierjr/long-haul 
 #### [View Demo](http://brianmaierjr.com/long-haul)
 
 ## License
