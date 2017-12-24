@@ -1,0 +1,28 @@
+title: Gustavo Silva
+description: Gustavo Silva's blog
+
+url: http://gustavorssilva.com
+baseurl: ""
+paginate_path: "blog/page:num/"
+permalink: blog/:title/
+
+markdown: kramdown
+highlighter: rouge
+plugins: [jekyll-paginate]
+paginate: 5
+
+navigation:
+ - title: Home
+   url: /index.html
+ - title: About
+   url: /about
+ - title: Contact
+   url: /contact
+
+social:
+   github: gustavorssilva
+   twitter: gustavorssilva
+   facebook: gustavoriossousasilva
+   email: silva.g19@gmail.com
+
+google_analytics: "UA-58263416-1"
