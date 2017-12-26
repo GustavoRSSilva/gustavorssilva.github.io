@@ -1,6 +1,6 @@
 ---
 layout: default
-title: About Gustavo Silva
+title: Gustavo Silva
 ---
 
 <div class="post">
