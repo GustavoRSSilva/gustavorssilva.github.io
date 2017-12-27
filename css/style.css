@@ -873,8 +873,8 @@ POST STYLING
     margin: 0 auto;
     display: block; }
 
-.post img {
-  margin-bottom: 2rem; }
+.post .no-margin img {
+  margin: 0; }
 
 .post .highlight {
   clear: both;
@@ -889,10 +889,6 @@ POST STYLING
   margin-top: 2rem; }
   .post .featuredImage img {
     margin-bottom: 0; }
-
-  .post figcaption {
-    text-align: center;
-  }
 
 
 /***************
@@ -1045,9 +1041,6 @@ GLOBAL STYLES
     padding: 0;
     overflow: hidden; }
 
-    .no-margin{
-      margin: 0;
-    }
   /***************
 HOMEPAGE STYLING
 ***************/

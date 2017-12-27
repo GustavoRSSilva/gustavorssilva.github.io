@@ -4,24 +4,21 @@ title: Gustavo Silva
 ---
 
 <div class="post">
-	<h1 class="pageTitle">About</h1>
-	<div>
-		<img class="no-margin" src="{{ '/assets/img/touring.jpg' | prepend: site.baseurl }}" alt="">
+	<h1 class="pageTitle">About me</h1>
+	<figure>
+		<img src="{{ '/assets/img/touring.jpg' | prepend: site.baseurl }}" alt="">
 		<figcaption>Fig.1 - TODO add my photo :)</figcaption>
-	</div>
-	<p class="intro">Hi, welcome to my site :</p>
-	<p>Gustavo Silva was created in honor of all the hard working touring bicycles that have traversed the globe time and time again. Take it for a spin.</p>
-	<h2>Features</h2>
+	</figure>
+	<p class="intro">Hi, my name is Gustavo Silva and this is my site. I am a Fullstack developer with a passion for new technologies. I also like to contribute to open source projects You can find a little about myself <a href="https://www.linkedin.com/in/gustavorssilva/" target="_blank">here (linkedin profile)</a> or <a href="https://github.com/GustavoRSSilva" target="_blank">here (github page)</a>.</p>
+	<p>They say that the best way to learn is to teach, so i am creating this blog to present some of the things that i have been learning lately.</p>
+	<h2>Interests</h2>
 	<ul>
-		<li>Built with SASS + GULP + BROWSERSYNC + AUTOPREFIXER</li>
-		<li>SVG Social Icons from <a href="http://customizr.net/icons/">Customizr</a></li>
-		<li><a href="http://responsive-nav.com/">Responsive Nav Menu</a></li>
-		<li><a href="https://github.com/snaptortoise/jekyll-rss-feeds">XML Feed for RSS Readers</a></li>
-		<li>Contact Form via <a href="http://formspree.io/">Formspree</a></li>
-    <li>5 Post Loop with excerpt on Home Page</li>
-		<li>Previous / Next Post Navigation</li>
-    <li>Estimated Reading Time for posts</li>
-		<li><a href="https://github.com/adobe-webplatform/dropcap.js">Drop Cap</a> on posts</li>
-		<li><a href="http://typecast.com/blog/a-more-modern-scale-for-web-typography">A Better Type Scale</a></li>
+		<li>Javascript, <a href="https://en.wikipedia.org/wiki/ECMAScript">ECMAScript (ES)</a></li>
+		<li>Best practices</li>
+		<li>React, redux-saga</li>
+		<li>Testing</li>
+		<li>Cascading style sheets</li>
+		<li>ExpressJS</li>
+		<li>REST API</li>
 	</ul>
 </div>
