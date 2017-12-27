@@ -873,9 +873,6 @@ POST STYLING
     margin: 0 auto;
     display: block; }
 
-.post .no-margin img {
-  margin: 0; }
-
 .post .highlight {
   clear: both;
   margin-bottom: 2rem; }
