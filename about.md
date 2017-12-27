@@ -4,9 +4,12 @@ title: Gustavo Silva
 ---
 
 <div class="post">
-	<h1 class="pageTitle">About Gustavo Silva</h1>
-	<img src="{{ '/assets/img/touring.jpg' | prepend: site.baseurl }}" alt="">
-	<p class="intro">Gustavo Silva is a minimal, long form <a href="http://jekyllrb.com">Jekyll</a> Theme. It can be used as is or customized to your hearts desire.</p>
+	<h1 class="pageTitle">About</h1>
+	<div>
+		<img class="no-margin" src="{{ '/assets/img/touring.jpg' | prepend: site.baseurl }}" alt="">
+		<figcaption>Fig.1 - TODO add my photo :)</figcaption>
+	</div>
+	<p class="intro">Hi, welcome to my site :</p>
 	<p>Gustavo Silva was created in honor of all the hard working touring bicycles that have traversed the globe time and time again. Take it for a spin.</p>
 	<h2>Features</h2>
 	<ul>

@@ -890,6 +890,11 @@ POST STYLING
   .post .featuredImage img {
     margin-bottom: 0; }
 
+  .post figcaption {
+    text-align: center;
+  }
+
+
 /***************
 POST NAV STYLING
 ***************/
@@ -1039,6 +1044,10 @@ GLOBAL STYLES
     margin-right: auto;
     padding: 0;
     overflow: hidden; }
+
+    .no-margin{
+      margin: 0;
+    }
   /***************
 HOMEPAGE STYLING
 ***************/
