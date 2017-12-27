@@ -884,15 +884,12 @@ POST STYLING
   color: seagreen;
   margin-right: .45rem; }
 
+
 .post .featuredImage {
   position: relative;
   margin-top: 2rem; }
   .post .featuredImage img {
     margin-bottom: 0; }
-
-  .post figcaption {
-    text-align: center;
-  }
 
 
 /***************
@@ -1045,9 +1042,6 @@ GLOBAL STYLES
     padding: 0;
     overflow: hidden; }
 
-    .no-margin{
-      margin: 0;
-    }
   /***************
 HOMEPAGE STYLING
 ***************/
