@@ -873,6 +873,9 @@ POST STYLING
     margin: 0 auto;
     display: block; }
 
+.post img {
+  margin-bottom: 2rem; }
+  
 .post .highlight {
   clear: both;
   margin-bottom: 2rem; }
@@ -880,6 +883,7 @@ POST STYLING
 .post .dropcap {
   color: seagreen;
   margin-right: .45rem; }
+
 
 .post .featuredImage {
   position: relative;
