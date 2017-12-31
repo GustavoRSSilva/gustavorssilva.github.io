@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "Post With A Code Snippet"
-date:   2017-12-13
+title:  "Solving rock paper scissors with react"
+date:   2017-12-31
 ---
 
-<p class="intro"><span class="dropcap">Y</span>ou'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes! To add new posts, simply add a file in the `_posts` directory that follows the convention: YYYY-MM-DD-name-of-post.ext.</p>
+<p class="intro"><span class="dropcap">O</span>nce a time ago a company based in London contacted me, they liked my curriculum and wanted to to complete a test in order to showcase my coding skills. They wanted me to create a Rock paper scissors game in angular. </p>
 
 Jekyll also offers powerful support for code snippets:
 
