@@ -55,6 +55,17 @@ main { /* 1 */
   display: block;
 }
 
+.crop {
+    width: 100%;
+    max-height: 600px;
+    overflow: hidden;
+}
+
+.crop img {
+    width: 100%;
+    height: auto;
+}
+
 /**
  * Add the correct margin in IE 8.
  */
