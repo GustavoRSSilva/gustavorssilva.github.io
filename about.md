@@ -7,7 +7,7 @@ title: Gustavo Silva
 	<h1 class="pageTitle">About me</h1>
 	<figure>
 		<div class="crop">
-			<img src="{{ '/assets/img/me1.jpg' | prepend: site.baseurl }}" alt="">
+			<img src="{{ '/assets/img/me.jpg' | prepend: site.baseurl }}" alt="">
 		</div>
 		<figcaption>Fig.1 - me</figcaption>
 	</figure>
