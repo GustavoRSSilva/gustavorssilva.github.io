@@ -10,12 +10,12 @@ And so i <a href="https://github.com/GustavoRSSilva/rock-paper-scissors-the-game
 
 There are many reasons why a company does not reply, this post is not about that, but looking back there are a lot more things that i could have done to showcase my coding skill.
 
-#### List
-* List Item
-* Longer List Item
-* Nested List Item
-* Nested Item
-* List Item
+#### What the company looks for when reviewing technical test:
+* The quality of the code;
+* Did it followed the requirements;
+* How much time did it took to finish the test;
+* The technologies used
+
 
 {% highlight javascript %}
 
