@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "Solving rock paper scissors with react"
+title:  "Solving rock paper scissors in a technical test environment"
 date:   2017-12-31
+description: A guideline to solve any technical test.
 ---
 <!-- Intro -->
 
@@ -51,7 +52,7 @@ the second step is to create an object that will show each move and his winning 
 <!-- TODO add the code for the second step -->
 {% endhighlight %}
 
-The thirst solution is, in my opinion, the smaller and creative one. This solution is to create an array with an hierchi??, where the index X beat the index X + 1 or The initial index (0).
+The thirst solution is, in my opinion, the smaller and creative one. This solution is to create an array with an hierarchy, where the index X beat the index X + 1 or The initial index (0).
 <!-- TODO graph image -->
 This is a lightweight solution that is less scalable. Clearly the second solution is the better one. However i think that having a side solution can be very interesting to show creativity in solving tests. The end solution looks like this:
 
