@@ -140,6 +140,8 @@ the second step is to create an object that will show each move and his winning 
       }
     }
 
+    //...
+  }
 {% endhighlight %}
 
 The thirst solution is, in my opinion, the smaller and creative one. This solution is to create an array with an hierarchy, where the index X beat the index X + 1 or The initial index (0).
@@ -147,83 +149,37 @@ The thirst solution is, in my opinion, the smaller and creative one. This soluti
 This is a lightweight solution that is less scalable. Clearly the second solution is the better one. However i think that having a side solution can be very interesting to show creativity in solving tests. The end solution looks like this:
 
 {% highlight javascript %}
-<!-- TODO ad the code for the third step -->
+  const moves = ['rock', 'scissors', 'paper'];
+
+  class App extends Component {
+    //...
+
+    validMove(target) {
+      return target && moves[target];
+    }  
+
+    setGameResult() {
+      const { playerOneMove, playerTwoMove } = this.state;
+
+      if(!this.validMove(playerOneMove) || !this.validMove(playerTwoMove)) {
+        return this.setState({ errorLog: 'Invalid operation!' });
+      }
+
+      if (playerOneMove === playerTwoMove) {
+        return this.setState({ result: 'It\'s a draw' });
+      }
+
+      return ( moves[moves.indexOf(playerOneMove) + 1] || moves[0]) ===  playerTwoMove ? this.setState({ result: 'You win!' }) : this.setState({ result: 'You lose!' });
+    }
+
+    //...
+  }
+
+
 {% endhighlight %}
 
 <!-- Documentation -->
-After having the tests and solution working we can create the documentation. Here i am going to talk about the requirements, the tests and the solution.
-<!-- TODO link for the documentation -->
-
-
-<!-- Resolution -->
-Finally we have a functional resolved test.
-
-{% highlight javascript %}
-<!-- TODO Add the code for the solution -->
-{% endhighlight %}
-
-With the tests:
-
-{% highlight javascript %}
-  import React from 'react';
-  import { shallow, mount } from 'enzyme';
-  import { shallowToJson } from 'enzyme-to-json';
-  import toJson from 'enzyme-to-json';
-  import App from './App';
-
-
-  describe('<App />', () => {
-    it('renders 1 <App /> component', () => {
-      const component = shallow(<App />);
-      expect(component).toHaveLength(1);
-    })
-
-    it('The Player picks rock, set the player move to rock', () => {
-      const component = mount(<App />);
-      const rockButton = component.find('button.rock-btn');
-      expect(toJson(rockButton)).toMatchSnapshot();
-
-      rockButton.simulate('click');
-      expect(component.state().playerOneMove).toBe('rock');
-    })
-
-    it('The Player picks paper, set the player move to paper', () => {
-      const component = mount(<App />);
-      const paperButton = component.find('button.paper-btn');
-      expect(toJson(paperButton)).toMatchSnapshot();
-
-      paperButton.simulate('click');
-      expect(component.state().playerOneMove).toBe('paper');
-    })
-
-    it('The Player picks scissors, set the player move to scissors', () => {
-      const component = mount(<App />);
-      const scissorsButton = component.find('button.scissors-btn');
-      expect(toJson(scissorsButton)).toMatchSnapshot();
-
-      scissorsButton.simulate('click');
-      expect(component.state().playerOneMove).toBe('scissors');
-    })
-
-    it('The Ai picks a valid move after the player', () => {
-      const component = mount(<App />);
-      const availableMoves = ['rock', 'paper', 'scissors'];
-
-      const scissorsButton = component.find('button.rock-btn');
-      scissorsButton.simulate('click');
-
-      expect(availableMoves).toContain(component.state().playerTwoMove);
-    })
-
-    it('The game ends and show the result after both players set the moves', () => {
-      const component = mount(<App />);
-      const scissorsButton = component.find('button.rock-btn');
-      scissorsButton.simulate('click');
-      expect(component.state().result).toBeTruthy();
-    })
-  })
-
-{% endhighlight %}
+After having the tests and solution the only thing missing is the Documentation. The documentation to should aim to teach the user about the project and how to run it. <a href="https://github.com/GustavoRSSilva/react-rock-paper-scissors-vs-ai/wiki"> Here I am going to talk about the requirements, the tests and the solution.</a>
 
 
 <!-- Tips -->
