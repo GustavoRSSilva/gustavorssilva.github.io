@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Solving rock paper scissors in a technical test environment"
-date:   2017-12-31
+date:   2018-01-21
 description: A guideline to solve any technical test.
 ---
 <!-- Intro -->
@@ -23,10 +23,12 @@ There are many reasons why a company does not reply, this post is not about that
 <!-- Requirements -->
 Having the target for the test done, we need to gather the requirements for the Rock, Paper and Scissors. If the challenge has requirements, you should follow them and mention them as you resolve the test. If the test doesn't come with, we need to create them. For this game I choose this requirements:
 
-<!-- TODO add the requirements -->
+* The player one chooses one of the three available moves (rock, paper, scissors);
+* After the player one move, the AI picks one of the three available moves at random;
+* Once both moves are picked, the App resolves the game and shows the result;
 
 <!-- TDD -->
-Once we have the requirements, we have a basis for your unit tests. I am going to use most of the requirement and test those.
+Once we have the requirements, we have a basis for our unit tests. I am going to use most of the requirement and test those.
 
 {% highlight javascript %}
 
