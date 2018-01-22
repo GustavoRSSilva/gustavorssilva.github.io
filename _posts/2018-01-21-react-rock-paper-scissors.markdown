@@ -10,7 +10,7 @@ description: A guideline to solve any technical test.
 
 And so i <a href="https://github.com/GustavoRSSilva/rock-paper-scissors-the-game" target="\_blank">did</a>... and they never contacted me back.
 
-There are many reasons why a company does not reply, this post is not about that, but looking back there are a lot more things that i could have done to showcase my coding skill. Let's take a look at what companies look for when developing technologies tests.
+There are many reasons why a company does not reply, this post is not about that, but looking back there are a lot more things that I could have done to showcase my coding skills. Let's take a look at what companies look for when developing technologies tests.
 
 <!-- What companies look for when reviewing a test -->
 
@@ -21,14 +21,14 @@ There are many reasons why a company does not reply, this post is not about that
 * The technologies used
 
 <!-- Requirements -->
-Having the target for the test done, we need to gather the requirements for the Rock, Paper and Scissors. If the challenge has requirements, you should follow them and mention them as you resolve the test. If the test doesn't come with, we need to create them. For this game I choose this requirements:
+In order to start we need to gather the requirements for the Rock, Paper and Scissors. If the challenge comes with requirements, you should follow them and mention them as you resolve the test. If the test doesn't come with, we need to create them. For this game I choose the following requirements:
 
 * The player one chooses one of the three available moves (rock, paper, scissors);
 * After the player one move, the AI picks one of the three available moves at random;
 * Once both moves are picked, the App resolves the game and shows the result;
 
 <!-- TDD -->
-Once we have the requirements, we have a basis for our unit tests. I am going to use most of the requirement and test those.
+Now we have a basis for our unit tests. I am going to use the requirements in the tests.
 
 {% highlight javascript %}
 
@@ -48,7 +48,7 @@ describe('<App />', () => {
 
 {% endhighlight %}
 
-As you can see the unit tests will follow the requirements and are going to make use that independent the solution you take, the requirements will be taken into consideration.
+As you can see the unit tests will follow the requirements and are going to be taken into consideration, independently the solution you take.
 
 <!-- Different solutions available -->
 
@@ -147,8 +147,13 @@ the second step is to create an object that will show each move and his winning 
 {% endhighlight %}
 
 The thirst solution is, in my opinion, the smaller and creative one. This solution is to create an array with an hierarchy, where the index X beat the index X + 1 or The initial index (0).
-<!-- TODO graph image -->
-This is a lightweight solution that is less scalable. Clearly the second solution is the better one. However i think that having a side solution can be very interesting to show creativity in solving tests. The end solution looks like this:
+
+<figure>
+	<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Rock-paper-scissors.svg/1200px-Rock-paper-scissors.svg.png" alt="rock_paper_scissors">
+	<figcaption>Fig1. - Rock, Paper and Scissors hierarchy</figcaption>
+</figure>
+
+This is a lightweight solution that is less scalable. Clearly the second solution is the better one. However I think that having a side solution can be very interesting to display creativity. The end solution looks like this:
 
 {% highlight javascript %}
   const moves = ['rock', 'scissors', 'paper'];
@@ -181,10 +186,10 @@ This is a lightweight solution that is less scalable. Clearly the second solutio
 {% endhighlight %}
 
 <!-- Documentation -->
-After having the tests and solution the only thing missing is the Documentation. The documentation to should aim to teach the user about the project and how to run it. <a href="https://github.com/GustavoRSSilva/react-rock-paper-scissors-vs-ai/wiki"> Here I am going to talk about the requirements, the tests and the solution.</a>
+After having the tests and solution the only thing missing is the Documentation. The documentation should aim to teach the user about the project and how to run it. <a href="https://github.com/GustavoRSSilva/react-rock-paper-scissors-vs-ai/wiki"> Here I am going to talk about the requirements, the tests and the solution.</a>
 
-
-<!-- Tips -->
 
 <!-- Conclusion -->
 In conclusion, when doing a technical test, always try to create a simple, scalable solution following all the required.
+
+The following test can be consulted <a href="https://github.com/GustavoRSSilva/react-rock-paper-scissors-vs-ai">here</a>.
