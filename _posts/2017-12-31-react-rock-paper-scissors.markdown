@@ -21,7 +21,7 @@ There are many reasons why a company does not reply, this post is not about that
 * The technologies used
 
 <!-- Requirements -->
-Having the target for the test done, we need to gather the requirements for the Rock, Paper and Scissors. If the challenge has requirements, you should follow them and mention them as you resolve the test. If the test doesn't come with, we need to create them. For this game I choose this requirements:
+Having the target for the test done, we need to gather the requirements. If the challenge has requirements, you should follow them and mention them as you resolve the test. If the test doesn't come with, we need to create them. For this game I choose this requirements:
 
 <!-- TODO add the requirements -->
 
