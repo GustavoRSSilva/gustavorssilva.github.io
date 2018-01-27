@@ -21,7 +21,11 @@ There are many reasons why a company does not reply, this post is not about that
 * The technologies used
 
 <!-- Requirements -->
-In order to start we need to gather the requirements. If the challenge comes with requirements, you should follow them and mention them as you resolve the test. If the test doesn't come with, we need to create them. For this game I choose the following requirements:
+<<<<<<< HEAD:_posts/2017-12-31-react-rock-paper-scissors.markdown
+Having the target for the test done, we need to gather the requirements. If the challenge has requirements, you should follow them and mention them as you resolve the test. If the test doesn't come with, we need to create them. For this game I choose this requirements:
+=======
+In order to start we need to gather the requirements for the Rock, Paper and Scissors. If the challenge comes with requirements, you should follow them and mention them as you resolve the test. If the test doesn't come with, we need to create them. For this game I choose the following requirements:
+>>>>>>> master:_posts/2018-01-21-react-rock-paper-scissors.markdown
 
 * The player one chooses one of the three available moves (rock, paper, scissors);
 * After the player one move, the AI picks one of the three available moves at random;
