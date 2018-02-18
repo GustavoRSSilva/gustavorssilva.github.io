@@ -5,6 +5,7 @@ date:   2018-02-21
 description: A small F.A.Q.
 ---
 
+<!-- TODO fiz this post, male it more personal -->
 <!-- Intro -->
 <p class="intro">Blockchain is on vouge, many companies are now discovering how powerfull a descentrelized approach can improve their product (link to article on how  IBM a foodchain implemented a blockchain to improve the validation date of its products). Dapps are here to stay, and now it is the best time to learn them. This article will focus on mainly on Ethereum with an enphasis on solidity.</p>
 
