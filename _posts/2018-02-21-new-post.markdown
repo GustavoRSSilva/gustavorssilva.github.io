@@ -5,34 +5,29 @@ date:   2018-02-21
 description: A small F.A.Q.
 ---
 
-<!-- TODO fiz this post, male it more personal -->
-<!-- Intro -->
 <p class="intro">Blockchain is on vouge, many companies are now discovering how powerfull a descentrelized approach can improve their product (link to article on how  IBM a foodchain implemented a blockchain to improve the validation date of its products). Dapps are here to stay, and now it is the best time to learn them. This article will focus on mainly on Ethereum with an enphasis on solidity.</p>
 
-<!-- Basic: what is a Dapp -->
-# What is a Dapp
-Dapp stands for descentralized application. By definition a Application is program that satifies a group group of requirements. There are many different types of applications,  gaming, learning, ordering food, getting a ride, etc.. A normall web application by nature is located in one or more predesignied server. Those sever are a located in one or more spaces, they are centralized. The owner has control of the information and can change it if needed (for better or worst). A dapp on the other hand is an application a located in the blockchain, once it is deployed, the owner has a limited control over it.
+#### What is a dApp ?
+Dapp stands for descentralized application. By definition a Application is program that satifies a group group of requirements. There are many different types of applications,  gaming, learning, ordering food, getting a ride, etc.. A normal web application by nature is located in one or more predesignied server. Those sever are a located in one or more spaces, they are centralized. The owner has control of the information and can change it if needed (for better or worst). A dapp on the other hand is an application a located in the blockchain, once it is deployed, the owner has a limited control over it.
 
 A Dapp can also be classified as a group of contracts.
 
-<!-- Basic: where are stored? -->
-# Where is the code stored?
+#### Where is the code stored ?
 While a classic Web API is stored in one or more servers (mainly for Requesting balancing), a Dapp is stored in the block with all its information (see API + database), once the code its mined, it is propagated throw all the different pools.
 
-<!-- Basic: Where is the data stored -->
-# Where is the data stored?
+#### Where is the data stored ?
 In Dapps, the data is stored in the memory (storage). Works a little bit like memory storage in Javascript. Once again this is different, in a API the data can be stored in one or more database.
 
-<!-- Basic: what changes? -->
-# What implications does it have?
-The fact that Dapps are store in the block, once it is mined, it is impossible to change the main code. It implies a heavy assertment in the code base where you don't want to have bugs that lock people's assets. We can all agree that Ethereum had enough of that, after all there is a reason we have ethereum and ethereum classic (link to the error in the code).
+#### What implications does it have ?
+The fact that Dapps are store in the block, once it is mined, it is impossible to change the main code. It implies a heavy assertment in the code base where you don't want to have bugs that lock people's assets. We can all agree that Ethereum had enough of that, after all there is a reason we have Ethereum and Ethereum classic (link to the error in the code).
 
 However you can still change the configurations, otherwise a contract that had a preassigned gas to a action would become unavaiable with all the flutuation that exist in the gas necessary to invoque? an transaction.
 
-<!-- Basic: how much does it cost to deploy a Dapp -->
-# How to deploy a Dapp
+#### How to deploy a Dapp ?
 A Dapp can be classified as a group of contracts, and in order to fully work the contracts need to be available in the blockchain. Sending an contract is the same as sending a transaction. Once you assign a gas value (see fee) that contract and send it, the miners will try to mine it to create a new block.
 
-<!-- Basic: List of available dapps -->
-# Where can i see a list of available DAPPs
+#### Where can I see a list of available DAPPs ?
+You can see the list here. (link to the list of available dapps).
+
+#### Where to start learning how to develop Dapps ?
 You can see the list here. (link to the list of available dapps).
