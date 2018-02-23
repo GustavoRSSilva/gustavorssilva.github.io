@@ -11,8 +11,8 @@ description: From Web APPs to DApps
 DApp stands for decentralized application. By definition a Application is program that satifies a group of requirements. There are many different types of applications ranging from gaming, learning, ordering food to getting a ride. A normal web application by nature is located in one or more predefined servers. Those severs are a located in one or more spaces, they are centralized. The owner has control of the information and can change it if needed. A DApp on the other hand is an application a located in the Blockchain, once it is deployed, the owner has a limited control over it.
 A DApp can also be classified as a group of contracts.
 
-#### What language does a Ethereum DApp support ?
-You have a wide range of languages available to develop a DApp, basically every language that can be compiled Ethereum. While the most common is <a href="https://github.com/ethereum/solidityn" target="\_blank">solidity</a>, you can use <a href="https://media.consensys.net/an-introduction-to-lll-for-ethereum-smart-contract-development-e26e38ea6c23" target="\_blank">LLL</a>, <a href="https://github.com/ethereum/wiki/wiki/Serpent" target="\_blank">Serpent</a>, <a href="https://github.com/ewasm/design" target="\_blank">eWasm</a> and many others.
+#### What languages Ethereum DApp support ?
+You have a wide range of languages available to develop a DApp, basically every language that can be compiled by Ethereum. While the most common is <a href="https://github.com/ethereum/solidityn" target="\_blank">solidity</a>, you can use <a href="https://media.consensys.net/an-introduction-to-lll-for-ethereum-smart-contract-development-e26e38ea6c23" target="\_blank">LLL</a>, <a href="https://github.com/ethereum/wiki/wiki/Serpent" target="\_blank">Serpent</a>, <a href="https://github.com/ewasm/design" target="\_blank">eWasm</a> and many others.
 
 #### Where is the code stored ?
 In a classic Web API the code is stored in one or more servers, while in a DApp the code is stored in the block, once the code its mined, it is propagated throw the Blockchain.
@@ -33,4 +33,4 @@ As for the deployment itself you want to use Ganache (formerly TestRPC), and you
 #### Where can I see a list of available DApps ?
 You can find the list of available DApps on <a href="https://www.stateofthedapps.com/" target="\_blank">stateofthedapps.com</a>
 
-Hopefully this brief introduction will get you interested in starting learning more about DApps. If you want to start developing on Ethereum I would recommend for you to start with <a href="https://cryptozombies.io/" target="\_blank">CryptoZombies</a>, a funny and interactive game.
+Hopefully this brief introduction will get you interested in starting learning more about DApps. If you want to start developing on Ethereum I would recommend you to start with <a href="https://cryptozombies.io/" target="\_blank">CryptoZombies</a>, a funny and interactive game.
