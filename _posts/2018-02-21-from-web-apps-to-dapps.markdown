@@ -5,7 +5,7 @@ date:   2018-02-21
 description: From Web APPs to DApps
 ---
 
-<p class="intro">Bloackchain is in vogue, many companies are now discovering how powerful a decentralized approach can improve <a href="https://techcrunch.com/2017/10/16/ibm-cross-border-payments-Blockchain/" target="\_blank">their product</a>. As more companies discover, more demand for Blockchain developers there will be. In this article in am going to try to answer some question about DApps and how they integrate with the Blockchain.</p>
+<p class="intro">Blockchain is in vogue, many companies are now discovering how powerful a decentralized approach can improve <a href="https://techcrunch.com/2017/10/16/ibm-cross-border-payments-Blockchain/" target="\_blank">their product</a>. As more companies discover, more demand for Blockchain developers there will be. In this article in am going to try to answer some question about DApps and how they integrate with the Blockchain.</p>
 
 #### What is a DApp ?
 DApp stands for decentralized application. By definition a Application is program that satifies a group of requirements. There are many different types of applications ranging from gaming, learning, ordering food to getting a ride. A normal web application by nature is located in one or more predefined servers. Those severs are a located in one or more spaces, they are centralized. The owner has control of the information and can change it if needed. A DApp on the other hand is an application a located in the Blockchain, once it is deployed, the owner has a limited control over it.
