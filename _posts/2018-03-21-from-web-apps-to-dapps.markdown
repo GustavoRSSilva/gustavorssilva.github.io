@@ -5,6 +5,13 @@ date:   2018-03-21
 description: And how the block does to protect it.
 ---
 
+<!-- Introduction -->
+
+<!-- Why is it a problem -->
+
+<!-- What to do to fix it -->
+
+
 Why randomness can be attacked.
 
 https://ethereum.stackexchange.com/questions/191/how-can-i-securely-generate-a-random-number-in-my-smart-contract
