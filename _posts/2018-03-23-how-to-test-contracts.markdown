@@ -6,20 +6,21 @@ description: From unit testing to End to end.
 ---
 
 <!-- Introduction -->
-Once the contract is mined there is very little you can do to change it, so you have to be sure that everything works as intended.
+Once the contract is mined there is very little you can do to change it, you have to be sure that everything works as intended.
 
 There is no substitute for testing. In this tutorial I am going to talk about two types of tests, unit testing and e2e testing (End to End) applied to Ethereum Solidity.
 
-I am going to create a <a href="https://en.wikipedia.org/wiki/ERC20" target="\_blank">erc20</a> token (Gtoken).
+I am going to create a <a href="https://en.wikipedia.org/wiki/ERC20" target="\_blank">erc20 token</a> (Gtoken).
 As with any feature, the first thing to do is to gather the requirements.
 
-# requirements
+## requirements
 1. The starting tokens amount is 1000;
 2. When initiated the Owner address is award all the tokens;
 3. It is possible to transfer tokens from one user to the other;
 
+
 <!-- Unit test -->
-## Unit testing
+### Unit testing
 
 <a href="https://en.wikipedia.org/wiki/Unit_testing" target="\_blank">Unit testing</a> is a method where you test a individual unit of code. It focus on classes and classes' functions. The first two requirements are the best targets for unit testing, the 3th one is a end to end test.
 
@@ -64,7 +65,7 @@ contract TestGtoken {
 
 
 <!-- E2E testing -->
-## End to end testing (e2e)
+### End to end testing (e2e)
 
 <a href="https://www.techopedia.com/definition/7035/end-to-end-test" target="\_blank">End to end testing</a> is "used to test whether the flow of an application is performing as designed from start to finish"<a href="https://www.techopedia.com/definition/7035/end-to-end-test" target="\_blank">(source)</a>. the third requirement, to be possible to transfer tokens from one user to the other is is there with e2e testing. The End to end testing will use Javacript.
 
@@ -132,3 +133,6 @@ contract('Gtoken', function(accounts) {
   });
 });
 {% endhighlight %}
+
+<!-- Conclusion -->
+You should write tests before deploying a contract into the Blockchain. For more information see this tutorials on <a href="https://www.youtube.com/watch?v=Cow_aL7NUGY" target="\_blank">Developing an ICO/Crowdsale with TDD</a>
