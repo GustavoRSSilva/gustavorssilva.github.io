@@ -5,7 +5,7 @@ description: A guideline on how to deploy a contract into a test Network.
 date:   2018-04-21
 ---
 <!-- Intro -->
-## Why Ropsten Network?
+## Whats is the Ropsten Network?
 Ropsten Newtwork is one three biggest Ethereum test Networks, the other two are Kinbery and Kovan.
 
 <!-- Tools needed -->
@@ -173,6 +173,7 @@ Once you have all the tools isntalled its time to go the deployment. just to mak
 <!-- connect yout private account to Geth -->
 <!-- Use truffle to deploy the contract and all the dependencies. -->
 #### Use truffle to deploy the contract and all the dependencies.
+
 To deploy a contract using truffle should not be a problem. Just use the command</br>
 ``` truffle deploy --network ropsten --reset ```
 
