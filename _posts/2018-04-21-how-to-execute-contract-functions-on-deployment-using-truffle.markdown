@@ -156,16 +156,16 @@ contract Gtoken is Token {
 To deploy a contract you need Ether to use it as Gas (link to gas). One of the main differences about the test networks is the path you take in order to get Ether, neither of them you use real Ethereum, and you can get it for free. In order to get some ether go to the Ropsten Network faucet page, <a href="http://faucet.ropsten.be:3001/" target="\_blank">http://faucet.ropsten.be:3001/</a> and request 1 Ether. Now you hvae 1 Ether on your account.
 
 ### Truffle
-Once you have the Ether and the contract ready, the next step is to install truffle. If you are testing you contract you should already have it installed, if not, there is no problem Truffle is pretty easy to install, just follow the Installment on the <a href="https://github.com/trufflesuite/truffle" target="\_blank">Github page</a>.
+Once you have the Ether and the contract ready, the next step is to install truffle. If you are testing you contract you should already have it installed, if not, Truffle is pretty easy to install, just follow the Installment on the <a href="https://github.com/trufflesuite/truffle" target="\_blank">Github page</a>.
 
 ### Ethereum node
-The last thing missing is the Ethereum node. In order to deploy a contract, you need to be connected to the blockchain. You are also going to need an account there with Ether in order to deploy the contract. In this post i am going to use GETH (link to Geth), The Ethereum Node written in GoLang. The installation should be straight forward.
+The last thing missing is the Ethereum node. In order to deploy a contract, you need to be connected to the blockchain. You are also going to need an account there with Ether in order to deploy the contract. In this post I am going to use the public node Infura. You calso use a private node, with Geth, tmux, etc...
 
 ### Deployment
-Once you have all the tools isntalled its time to go the deployment. just to make things clear I am going to list all the steps you need:
+Once you have all the tools installed it's time for the deployment. just to make things clear I am going to list all the steps you need:
 
-1. Start GETH.
-2. Connect your private account to GETH.
+1. Register in Infura.
+2. Set your .
 3. Use truffle to deploy the contract and all the dependencies.
 4. Use EtherScan to confirm that your contract was successfully deployed.
 
