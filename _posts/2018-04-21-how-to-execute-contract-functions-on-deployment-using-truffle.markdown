@@ -5,21 +5,21 @@ description: A guideline on how to deploy a contract into a test Network.
 date:   2018-04-21
 ---
 <!-- Intro -->
-## Whats is the Ropsten Network?
-Ropsten Newtwork is one three biggest Ethereum test Networks, the other two are Kinbery and Kovan.
+## Why deploy on the test network?
+before you deploy you contract into the Mainnet, you should test it, failling to do so, it is very expensive, so you need a solution to test your contract before deploying it. Ropsten is the perfect network to do it, being of th three biggest Test networks, it is fast, due to the use proof of authority instead of Ethereum Proof of work and it is easy to earn Ether. It this tutorial We are going to a contract in Ropsten Network.
 
 <!-- Tools needed -->
 ### required Tools
 in order to deploy a contract you are going to need the following tools:
 
-1. The contract that is going to be used on the network.
-2. Ether (Link to Ether), to deploy a contract you need gas (link to gas).
-3. Truffle. (link to Truffle)
-4. Ethereum node, there many options, in this tutorial i am going to a public one <a href="https://infura.io/" target="\_blank">Infura</a>.
+1. The contract;
+2. <a href="https://www.ethereum.org/ether" target="\_blank">Ether</a>, to convert into <a href="https://ethgasstation.info/" target="\_blank">gas</a>;
+3. <a href="http://truffleframework.com/" target="\_blank">Truffle</a>;
+4. Ethereum node, <a href="https://infura.io/" target="\_blank">Infura</a>.
 
 <!-- Testing your contract -->
 ### Getting the Contract ready to be deployed
-Before deploying a contract into the test Network we should make sure that the contract has no errors. Once it is deployed the only way to change is to deploy the contract again. This take time and Ether, this is why you should test your contract before deploying. If you want to know about testing your contract you should ready this article about <a href="http://www.gustavorssilva.com/blog/how-to-test-contracts/" target="\_blank">testing your contract</a>.
+Before deploying a contract into the test Network we should make sure that the contract has no errors. Once it is deployed the only way to change is to deploy the contract again. This take time and Ether, so you should test your contract before deploying. If you want to know about testing your contract you should read this article about <a href="http://www.gustavorssilva.com/blog/how-to-test-contracts/" target="\_blank">testing your contract</a>.
 
 In this tutorial i am going to use my contract from the previous post, my own <a href="https://github.com/GustavoRSSilva/erc20-token" target="\_blank">ERC20 token Gtoken</a>.
 
@@ -153,32 +153,61 @@ contract Gtoken is Token {
 
 <!-- set the environment -->
 ### Getting Ether on the test network
-To deploy a contract you need Ether to use it as Gas (link to gas). One of the main differences about the test networks is the path you take in order to get Ether, neither of them you use real Ethereum, and you can get it for free. In order to get some ether go to the Ropsten Network faucet page, <a href="http://faucet.ropsten.be:3001/" target="\_blank">http://faucet.ropsten.be:3001/</a> and request 1 Ether. Now you hvae 1 Ether on your account.
+Before deploying your contract you need <a href="https://ethgasstation.info/" target="\_blank">Gas</a>. One of the main differences between test networks is how you get Ether, neither of them you use real Ethereum, and you can get it for free. In order to get some Ether go to the Ropsten Network faucet page, <a href="http://faucet.ropsten.be:3001/" target="\_blank">http://faucet.ropsten.be:3001/</a> and request 1 Ether. Now you have 1 Ether on your account.
 
 ### Truffle
-Once you have the Ether and the contract ready, the next step is to install truffle. If you are testing you contract you should already have it installed, if not, there is no problem Truffle is pretty easy to install, just follow the Installment on the <a href="https://github.com/trufflesuite/truffle" target="\_blank">Github page</a>.
+Once you have the Ether and the contract ready, the next step is to install truffle. If you are testing you contract you should already have it installed, if not, Truffle is pretty easy to install, just follow the Installment on the <a href="https://github.com/trufflesuite/truffle" target="\_blank">Github page</a>.
+
+
+{% highlight javascript %}
+var HDWalletProvider = require("truffle-hdwallet-provider");
+
+var infuraToken = 'gR45rfdSDEWWQe';
+var mnemonic =
+    'today blue egg air living keys black water pass wheel nerd to twelve';
+
+module.exports = {
+    ropsten: {
+      provider: function() {
+        return new HDWalletProvider(
+            mnemonic,
+            `https://ropsten.infura.io/${infuraToken}`
+        )
+      },
+      network_id: "3",
+      gas: 4700000
+    },
+  }
+};
+
+{% endhighlight %}
 
 ### Ethereum node
-The last thing missing is the Ethereum node. In order to deploy a contract, you need to be connected to the blockchain. You are also going to need an account there with Ether in order to deploy the contract. In this post i am going to use GETH (link to Geth), The Ethereum Node written in GoLang. The installation should be straight forward.
+The last thing missing is the Ethereum node. In order to deploy a contract, you need to be connected to the Blockchain. I am going to use the public node  <a href="https://infura.io/" target="\_blank">Infura</a> public node. Infura is very easy to use, just login into their and and you will recieve a key. You need that token to connect to the network.
+
+If you do not use a public network, you can use a private local node. Geth or Tmux are the best options.
 
 ### Deployment
-Once you have all the tools isntalled its time to go the deployment. just to make things clear I am going to list all the steps you need:
+Once you have all the tools installed it is time for the deployment. Just to make things clear I am going to list all the steps you need:
 
-1. Start GETH.
-2. Connect your private account to GETH.
+1. Register in Infura.
+2. Set your mnemonic and infura key.
 3. Use truffle to deploy the contract and all the dependencies.
 4. Use EtherScan to confirm that your contract was successfully deployed.
 
-<!-- Start Geth -->
-<!-- connect yout private account to Geth -->
+
 <!-- Use truffle to deploy the contract and all the dependencies. -->
 #### Use truffle to deploy the contract and all the dependencies.
 
-To deploy a contract using truffle should not be a problem. Just use the command</br>
+To deploy a contract using truffle should not be a problem. Just use the command:
 ``` truffle deploy --network ropsten --reset ```
 
-<!-- Image of the command and the result -->
+<figure>
+	<img src="{{ '/assets/img/succDeployment.png' | prepend: site.baseurl }}" alt="">
+	<figcaption>Fig1. - Successful deployment</figcaption>
+</figure>
 
 <!-- Use EtherScan to confirm that your contract was successfully deployed. -->
 #### Use EtherScan to confirm that your contract was successfully deployed.
-Once all the other steps are complet, we now need to verify if the contract is in the Network, just copy the address, go to (Link to ropsten etherscan) and search for it. There should an address with your contract information.
+
+Once all the other steps are complet, we now need to verify if the contract is in the Network, just copy the address, go to <a href="https://ropsten.etherscan.io/" target="\_blank">https://ropsten.etherscan.io/</a> and search for it. There should an address with your contract information. Your contract should be there <a href="https://ropsten.etherscan.io/address/0x9fa6566fe4c4af44c26ff0dba146d9aed7c63c9f" target="\_blank" >https://ropsten.etherscan.io/address/0x9fa6566fe4c4af44c26ff0dba146d9aed7c63c9f</a>
