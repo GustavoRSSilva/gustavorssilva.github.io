@@ -196,12 +196,10 @@ Once you have all the tools installed it is time for the deployment. Just to mak
 4. Use EtherScan to confirm that your contract was successfully deployed.
 
 
-<!-- Start Geth -->
-<!-- connect yout private account to Geth -->
 <!-- Use truffle to deploy the contract and all the dependencies. -->
 #### Use truffle to deploy the contract and all the dependencies.
-To deploy a contract using truffle should not be a problem. Just use the command
 
+To deploy a contract using truffle should not be a problem. Just use the command:
 ``` truffle deploy --network ropsten --reset ```
 
 <figure>
