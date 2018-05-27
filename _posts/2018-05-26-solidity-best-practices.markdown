@@ -8,7 +8,17 @@ description: A guideline for new developers
 <!-- Introduction -->
 Developing on the blockchain it is still in its infancy.In this post i am going to point out some of the best practices when developing a contract in Solidity.
 
-<!-- Good practices -->
+<!-- Best practices -->
+## Best practices
+
+### Prepare for failure
+
+<!-- decode this -->
+Any non-trivial contract will have errors in it. Your code must, therefore, be able to respond to bugs and vulnerabilities gracefully.
+
+Pause the contract when things are going wrong ('circuit breaker')
+Manage the amount of money at risk (rate limiting, maximum usage)
+Have an effective upgrade path for bugfixes and improvements
 
 <!-- conclusion -->
 
