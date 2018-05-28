@@ -20,6 +20,10 @@ Pause the contract when things are going wrong ('circuit breaker')
 Manage the amount of money at risk (rate limiting, maximum usage)
 Have an effective upgrade path for bugfixes and improvements
 
+### Rollout carefully
+
+It is always better to catch bugs before a full production release. - Test contracts thoroughly, and add tests whenever new attack vectors are discovered - Provide bug bounties starting from alpha testnet releases - Rollout in phases, with increasing usage and testing in each phase
+
 <!-- conclusion -->
 
 #### Bibliography
