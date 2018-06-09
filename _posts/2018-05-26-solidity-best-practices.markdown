@@ -1,12 +1,17 @@
 ---
 layout: post
-title:  "[WIP] Simple guide to solidity best practices"
+title:  "Simple guide to solidity best practices - Part 1"
 date:   2018-05-21
 description: A guideline for new developers
 ---
 
 <!-- Introduction -->
-Developing on the blockchain it is still in its infancy.In this post i am going to point out some of the best practices when developing a contract in Solidity.
+## intro
+I was going to write about some of the mistakes that I made during the first 6 months of developing contracts. Instead I am going write about some of the things I learnned? from those mistakes.
+
+As usual i am going to go straight to the point, so here it goes:
+
+
 
 <!-- Best practices -->
 ## Best practices
