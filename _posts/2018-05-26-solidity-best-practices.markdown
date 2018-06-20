@@ -1,4 +1,4 @@
----
+ run bu---
 layout: post
 title:  "Simple guide to solidity best practices - Part 1"
 date:   2018-05-21
@@ -28,6 +28,21 @@ Have an effective upgrade path for bugfixes and improvements
 ### Rollout carefully
 
 It is always better to catch bugs before a full production release. - Test contracts thoroughly, and add tests whenever new attack vectors are discovered - Provide bug bounties starting from alpha testnet releases - Rollout in phases, with increasing usage and testing in each phase
+
+### Use caution when making external calls
+
+Calls to untrusted contracts can introduce several unexpected risks or errors. External calls may execute malicious code in that contract or any other contract that it depends upon. As such, every external call should be treated as a potential security risk. When it is not possible, or undesirable to remove external calls, use the recommendations in the rest of this section to minimize the danger.
+
+### Use assert() and require() properly
+
+In Solidity 0.4.10 assert() and require() were introduced. require(condition) is meant to be used for input validation, which should be done on any user input, and reverts if the condition is false. assert(condition) also reverts if the condition is false but should be used only for invariants: internal errors or to check if your contract has reached an invalid state. Following this paradigm allows formal analysis tools to verify that the invalid opcode can never be reached: meaning no invariants in the code are violated and that the code is formally verified.
+
+### Beware rounding with integer division
+
+All integer division rounds down to the nearest integer. If you need more precision, consider using a multiplier, or store both the numerator and denominator.
+
+(In the future, Solidity will have a fixed-point type, which will make this easier.)
+
 
 <!-- conclusion -->
 
