@@ -37,11 +37,7 @@ Calls to untrusted contracts can introduce several unexpected risks or errors. E
 
 In Solidity 0.4.10 assert() and require() were introduced. require(condition) is meant to be used for input validation, which should be done on any user input, and reverts if the condition is false. assert(condition) also reverts if the condition is false but should be used only for invariants: internal errors or to check if your contract has reached an invalid state. Following this paradigm allows formal analysis tools to verify that the invalid opcode can never be reached: meaning no invariants in the code are violated and that the code is formally verified.
 
-### Beware rounding with integer division
-
-All integer division rounds down to the nearest integer. If you need more precision, consider using a multiplier, or store both the numerator and denominator.
-
-(In the future, Solidity will have a fixed-point type, which will make this easier.)
+### Avoid using storage
 
 
 <!-- conclusion -->
