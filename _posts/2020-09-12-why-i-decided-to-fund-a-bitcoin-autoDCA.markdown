@@ -15,5 +15,5 @@ The 2017/18 Crypto bull run left a sour taste, for one side I got to learn a new
 The only case that still holds today us Crypto currency as a store of value. Bitcoin is the new gold.
 
 <!-- Conclusion -->
-I have since stopped betting on everycoin in the hopes that it will dethrone Bitcoin and started to aquiring every monthe at least 100€ worth of Bitcoin
-I want to help You invest in the same way format as I am, in the easiest way possible. This is why I joinned <a href="https://hitashi.io/" target="\_blank">Hitashi.io</a>
+I have since stopped betting on every coin in the hopes that it will dethrones Bitcoin and started aquiring every monthe at least 100€ worth of Bitcoin
+I want to help You invest in the same way format as I did, in the easiest way possible. This is why I joinned <a href="https://hitashi.io/" target="\_blank">Hitashi.io</a>
