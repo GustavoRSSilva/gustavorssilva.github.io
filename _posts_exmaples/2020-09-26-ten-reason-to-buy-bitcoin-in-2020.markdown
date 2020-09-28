@@ -40,8 +40,8 @@ With Corona virus locking people and destroying the economy, many central banks 
 9 - Bitcoin does not care about fiat currencies
 <!-- Reason 10 -->
 10 - Bitcoin is the best store of value
-Bitcoin is the new gold!
-
+Bitcoin is a digital store of value, better than the most used, traded and fought store of value, Gold. Gold is heavy, hard to carry around and easly confiscated. Something is a store of value if everyone believes that there will be value in the long term. Bitcoin is the digital gold.
 
 
 <!-- Conclusion -->
+I hope that with this point, 
